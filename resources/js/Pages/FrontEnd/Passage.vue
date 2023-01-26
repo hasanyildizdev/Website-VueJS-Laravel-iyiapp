@@ -13,8 +13,8 @@ onMounted(() => {
         var eTop = e.offsetTop;
         var eBottom = eTop+eHeight;
         var sPosition = window.scrollY+eHeight+sbHeight;
-       if(sPosition>eTop && sPosition<eBottom+500){
-            var sPercentage= Math.round(parseFloat(eHeight-(eBottom-sPosition))/8);   
+       if(sPosition>eTop){
+            var sPercentage= Math.round(parseFloat(eHeight-(eBottom-sPosition))/12);   
             return setImageHeight(sPercentage+100);
        }
 

@@ -14,9 +14,11 @@ onMounted(() => {
         return window.scrollY > 50 ? setScrollBg(true) : setScrollBg(false);
     });
     window.addEventListener('click', function(e){
-        if (!document.getElementById('menu').contains(e.target) && (!document.getElementById('menu-logo').contains(e.target))){
-        setMenu(false);
-       }  
+         try {
+            var clickedOnMenu=document.getElementById('menu').contains(e.target);
+            var clickedMenuIcon=document.getElementById('menu-icon').contains(e.target);
+            if (!clickedOnMenu && !clickedMenuIcon){setMenu(false);} 
+         } catch (error) {} 
     });
 });
 
@@ -58,7 +60,7 @@ function langTr(){ document.location="tr";}
                 </ul>
             </div>
             
-            <div class="flex flex-row items-center justify-center border-2 border-purple3 rounded-full px-1 py-1 mr-[1px]">
+            <div class="flex flex-row items-center justify-center border-2 border-purple3 rounded-full px-1 py-1 mr-[1px] lg:mr-1">
                 <button @click="langEn" class=" flex items-center justify-center hover:scale-110" >
                     <img  src="/img/eng.webp" alt="English" class="h-6 object-contain" loading="lazy">
                 </button>
@@ -67,7 +69,7 @@ function langTr(){ document.location="tr";}
                 </button>
             </div>
         </div>
-        <button id='menu-logo'  class="px-[1px] mb-[1px] flex lg:hidden items-center justify-center z-30" @click="setMenu(!showMenu)">
+        <button id="menu-icon"  class="px-[1px] mb-[1px] mr-[1px] flex lg:hidden items-center justify-center z-40" @click="setMenu(!showMenu)">
             <img  src="/img/menu.webp" alt="Menu" class="h-8 object-contain">
         </button>
     </nav>

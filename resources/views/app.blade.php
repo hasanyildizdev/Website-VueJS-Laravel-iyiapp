@@ -23,7 +23,7 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Lalezar&family=Roboto&family=Share+Tech+Mono&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="https://fonts.bunny.net/css2?family=Nunito:wght@400;600;700&display=swap">
-        <link rel="shortcut icon" type="image/webp" sizes="180x180"  href="{{ asset('img/icon_purple.png') }}"/>
+        <link rel="shortcut icon" type="image/webp" sizes="180x180"  href="{{ asset('img/icon_purple.webp') }}"/>
 
         <!-- Scripts -->
         @routes

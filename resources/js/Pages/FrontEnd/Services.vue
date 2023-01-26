@@ -37,7 +37,7 @@
                 <div class="mt-8 lg:mt-0 flex flex-col items-center justify-center cart h-72 w-80 hover:scale-90 lg:hover:scale-105 transition-all duration-300 scale-75 lg:scale-100 ">
                     <div class=" h-72 w-72 flex items-center justify-center ">
                         <img src="/img/responsive.webp" alt="Responsive Image" class="w-72 absolute">
-                        <img src="/img/icon.png" alt="Responsive Image" class="w-16 absolute pb-16 ml-6">
+                        <img src="/img/icon.webp" alt="Responsive Image" class="w-16 absolute pb-16 ml-6">
                         <div class="pl-10 flex flex-col items-center justify-center  z-10 pt-10">
                             <p class="mb-2 text-white text-lg font-bold">www.iyiapp.com</p>
                         </div>

@@ -6,7 +6,9 @@ import Contact from '@/Pages/FrontEnd/Contact.vue';
 import Projects from '@/Pages/FrontEnd/Projects.vue';
 import Services from '@/Pages/FrontEnd/Services.vue';
 import Passage from './FrontEnd/Passage.vue';
-
+defineProps({
+  projects: Object,
+});
 </script>
 
 <template>
@@ -14,7 +16,7 @@ import Passage from './FrontEnd/Passage.vue';
         <FrontEnd>
             <Hero/>
             <Services/>
-            <Projects/>
+            <Projects :projects="projects"/>
             <Passage/>
             <Contact/>
         </FrontEnd>

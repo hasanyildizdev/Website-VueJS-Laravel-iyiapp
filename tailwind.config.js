@@ -30,21 +30,24 @@ module.exports = {
                 lale: ['Lalezar', ...defaultTheme.fontFamily.sans ],
                 roboto: ['Roboto', ...defaultTheme.fontFamily.sans ],
             },
+            colors:{
+                'my_purple':'#3C205E',
+                'my_purple2':'#26093E',
+                'my_purple3':'#1A062B',
+                'purple2':'#8000FF',
+                'purple3':'#5B3D9B',
+                'white':'#FFFFFF',
+                'black':'#000000',
+                'gray':'#232223',
+                'brown':'#3B2920',
+                'dark_blue':'#10153F',
+                'red':'#FF0000'
+            }
         },
-        colors:{
-            'my_purple':'#3C205E',
-            'my_purple2':'#26093E',
-            'my_purple3':'#1A062B',
-            'purple2':'#8000FF',
-            'purple3':'#5B3D9B',
-            'white':'#FFFFFF',
-            'black':'#000000',
-            'gray':'#232223',
-            'brown':'#3B2920',
-            'dark_blue':'#10153F',
-            'red':'#FF0000'
-        }
     },
 
-    plugins: [require('@tailwindcss/forms')],
+    plugins: [
+        require('@tailwindcss/forms'),
+    ],
+    
 };
