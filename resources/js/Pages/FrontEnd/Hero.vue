@@ -4,7 +4,7 @@
     <section id="hero" class="w-full h-screen">
         <div  class="h-screen w-full flex items-center">
                 <div class=" lg:mt-10 mx-4 lg:ml-10 flex flex-col z-10">
-                    <p class="  text-purple2 text-3xl lg:text-5xl font-lale animate-[leftToRight_2s]">IYIAPP {{$t('software')}}</p>
+                    <h1 class="  text-purple2 text-3xl lg:text-5xl font-lale animate-[leftToRight_2s]">IYIAPP {{$t('software')}}</h1>
                     <h1 class="lg:mt-4 text-white  font-tech text-lg lg:text-3xl animate-[rightToLeft_3s]">{{ $t('unlimited') }}</h1>
                     <h2 class="hidden lg:block mt-4 text-white font-roboto text-justify lg:text-lg animate-[leftToRight_2s]">
                         {{$t('hero_paragraph1') }} <br/>
