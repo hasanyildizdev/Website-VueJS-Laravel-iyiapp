@@ -1,7 +1,7 @@
 <script setup>
 </script>
 <template>
-    <section id="hero" class="w-full h-screen">
+    <section id="hero" class="w-full h-screen bg-black">
         <div  class="h-screen w-full flex items-center">
                 <div class=" lg:mt-10 mx-4 lg:ml-10 flex flex-col z-10">
                     <h1 class="  text-purple2 text-3xl lg:text-5xl font-lale animate-[leftToRight_2s]">IYIAPP {{$t('software')}}</h1>
@@ -21,7 +21,6 @@
                 <div  class="w-full lg:w-auto flex justify-end absolute -bottom-36 lg:-bottom-44 lg:right-16 right-0">
                     <img src="/img/spaceship.webp" alt="Spaceship" class="w-44 lg:w-auto object-contain">
                 </div>
-
             </div>            
     </section>
 </template>
