@@ -19,7 +19,7 @@ export default defineConfig({
     ],
     server: {
         hmr: {
-            host: '192.168.1.120',
+            host: '192.168.1.124',
         },
         port: '8000',
         host: true
