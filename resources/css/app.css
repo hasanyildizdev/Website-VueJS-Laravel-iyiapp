@@ -1,0 +1,16 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+html {
+  scroll-behavior: smooth;
+}
+
+@layer base{
+  .navButton{ @apply w-32 mx-2 text-xl font-bold font-tech text-purple2 hover:text-white hover:border-2 border-purple2 rounded-full transition-all duration-100 flex items-center justify-center;}
+  .navButtonMobile{ @apply  text-xl font-bold font-tech text-white hover:text-purple2 transition-all duration-100 flex items-center justify-center;}
+  .myButton { @apply px-6 py-2 bg-my_purple2 text-white  font-bold border-white border-2 rounded-full hover:bg-white hover:text-my_purple transition-all duration-300;}
+  .myButton2 { @apply px-6 py-2  text-white  font-bold border-white border-2 rounded-full hover:bg-white hover:text-my_purple transition-all duration-300;}
+  .cart { @apply bg-purple2 p-6 rounded-3xl text-white;}  
+  .input    { @apply text-black bg-white h-[50px]  outline-none w-full pl-6 text-[15px] rounded-lg focus:outline focus:outline-1 focus:outline-white;}
+  .textarea { @apply text-black bg-white h-[180px] outline-none w-full  p-6 resize-none rounded-lg focus:outline focus:outline-1 focus:outline-white;}
+}
